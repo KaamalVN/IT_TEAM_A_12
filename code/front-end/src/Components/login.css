@@ -1,0 +1,167 @@
+@import'bootstrap/dist/css/bootstrap.min.css';
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0s;
+  /* overflow: hidden; */
+}
+
+.register {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  background: linear-gradient(to right, white 50%, rgba(255, 211, 0, 1) 50%);
+}
+
+h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  padding-right: 2%;
+  margin-bottom: 0%;
+}
+
+p {
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+label {
+  text-align: left;
+  font-weight: 500;
+}
+
+input {
+  border-radius: 8px;
+}
+
+a {
+  background: white;
+  color: black;
+  font-weight: 400;
+}
+
+.colLeft {
+  background: white;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  left: 0;
+  margin: auto;
+  padding: 3em 0;
+}
+
+.colRight {
+  box-shadow: inset 25px 0px 30px rgba(51, 51, 51, 0.25);
+  background-color: rgba(255, 211, 0, 1);
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  right: 0;
+}
+
+.flex {
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.bottom {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember {
+  color: rgba(43, 43, 43, 1);
+  font-weight: 400;
+}
+
+#form {
+  background: white;
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+
+#form > input,
+#loginsubmit {
+  background: white;
+  border: 1px solid #e9ecef;
+  padding: 0.9em 1em;
+}
+
+#form > input:focus {
+  outline: none;
+}
+
+#form > .btn {
+  background-color: #000000;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#frntImg {
+  position: relative;
+  margin-left: 3%;
+  object-position: center;
+  margin-top: 65px;
+  height: 450px;
+  width: 80%;
+  /* margin-top: 50px; */
+  /* position: static;
+      width: 803px;
+      height: 829px;
+      left: 1004px;
+      top: 126px; */
+}
+
+#form {
+  padding-right: 35px;
+}
+
+#logo {
+  position: fixed;
+  left: 15px;
+  top: 10px;
+}
+
+@media screen and (max-width: 950px) {
+  #frntImg {
+    display: none;
+  }
+  .col-2 {
+    display: none;
+  }
+
+  .col-1 {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    margin: auto;
+    padding: 3em 0;
+  }
+
+  .register {
+    background: white;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  h2 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,348 @@
+/* EmployeeForm.css */
+/* *{
+  background: #414141;
+} */
+
+#travelContainer {
+  margin : 7rem;
+  margin-left: 8rem;
+}
+
+#travelRow {
+  float: right;
+  width: 80%;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+#travelrequestFilter {
+  margin-top: -5%;
+  margin-right: 1rem;
+}
+
+#travelrequestFilter input[type="date"] {
+  background-color: #414141; /* Background color for the date input */
+  color: rgba(255, 211, 0, 1); /* Text color for the date input */
+  border: 1px solid rgba(255, 211, 0, 1); /* Border color for the date input */
+}
+
+#travelrequestFilter .btn-primary {
+  background-color: rgba(255, 211, 0, 1);
+  border-color: rgba(255, 211, 0, 1);  /* Background color on hover for the "Add Request" button */
+  color: black;
+}
+
+#travelrequestFilter .btn-primary:hover {
+  background-color: #414141; /* Background color for the "Add Request" button */
+  border-color: rgba(255, 211, 0, 1); /* Border color for the "Add Request" button */
+  color: rgba(255, 211, 0, 1);
+
+}
+#travelrequestFilter select {
+  background-color: #414141; /* Background color of the dropdown box */
+  color: rgba(255, 211, 0, 1); /* Text color of the dropdown box */
+  border: 1px solid rgba(255, 211, 0, 1);
+  
+}
+
+
+/* Style the dropdown options (if needed) */
+#travelrequestFilter select option {
+  background-color: #414141; /* Background color of the dropdown options */
+  color: rgba(255, 211, 0, 1); /* Text color of the dropdown options */
+}
+
+
+.table > thead > tr > th{
+  background-color: #414141;
+  color: rgba(255, 211, 0, 1);
+}
+
+#tableStart{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#tableEnd{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#more_details_row{
+  height: 10rem;
+}
+
+.rounded-row {
+  border-radius: 10rem; /* Adjust the value as needed */
+}
+
+#travelrequestToggle{
+  margin-left: 8%;
+  background-color: gray;
+  width: fit-content;
+  padding: 5px;
+}
+
+#travelrequestToggleButtons{
+  background-color: #414141;
+  color: rgba(255, 211, 0, 1);
+  height: fit-content;
+}
+
+#travelrequestBackground{
+  position: relative;
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  width: 95%;
+  margin-top: 12%;
+  margin-left: 8%;
+}
+
+#travelrequestTable{
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+#travelrequestView{
+  margin-right: 1rem;
+}
+
+#travelrequestTd {
+  position: relative;
+}
+
+#travelrequestTdFirstChild{
+  position: relative;
+  border-top-left-radius: 5px; 
+  border-bottom-left-radius: 5px;
+}
+
+#travelrequestTdLastChild{
+  position: relative;
+  border-bottom-right-radius: 5px; 
+  border-top-right-radius: 5px; 
+}
+
+#travelrequestSub {
+  position: absolute;
+  padding-left: 0.5rem;
+  bottom: 0.5rem;
+  left: 0;
+  font-size: smaller;
+}
+
+#action_buttons{
+  background-color: white;
+}
+.circleController{
+  margin-left: 20%;
+}
+
+.circle-container {
+  left: 2%;
+  margin: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the circles horizontally */
+}
+
+.circle-heading-container {
+  display: flex;
+  flex-direction: column; /* Stack circles and headings vertically on smaller screens */
+  align-items: center;
+  text-align: center;
+}
+
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: none; /* Default color for circles */
+  position: relative;
+  margin-right: 60px; /* Adjust the gap between circles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+  font-weight: bold;
+  font-size: 16px; /* Adjust font size as needed */
+  border: 2px solid #ccc;
+}
+
+.circle.yellow {
+  border: 2px solid rgba(255, 211, 0, 1);
+  background-color: rgba(255, 211, 0, 1); /* Change color of the first circle */
+  color: black;
+}
+
+.line {
+  width: 150%; /* Adjust the width of the line as needed */
+  height: 3px;
+  background-color: #ccc; /* Default line color */
+  position: absolute;
+  top: calc(50% - 1px); /* Position the line vertically in the middle of the circle */
+  right: -62px; /* Adjust the position of the line */
+}
+
+.line.yellow {
+  background-color: rgba(255, 211, 0, 1); /* Change color of the line for the first circle */
+}
+
+.circle:last-child::after {
+  content: none; /* Hide line on the last circle */
+}
+
+.heading {
+  color: white;
+  margin-top: 10px; /* Adjust spacing between circle and heading */
+  margin-left: -50px; /* Adjust the negative margin as needed */
+  font-size: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .circle-heading-container {
+    align-items: center; /* Center items horizontally on smaller screens */
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    margin-right: 0; /* Remove margin for circles on smaller screens */
+    margin-bottom: 20px; /* Add margin between circles on smaller screens */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .line {
+    width: 60px;
+    right: -60px;
+  }
+  
+  .heading {
+    margin-top: 5px; /* Adjust spacing between circle and heading on smaller screens */
+    margin-left: 0; /* Remove the negative margin on smaller screens */
+  }
+}
+.form-container {
+    border-radius: 0px 50px;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(255, 211, 0, 1) 25%, #dddddd 25%);
+    width: 72vw;
+    height: fit-content;
+    margin-left: 20%;
+    margin-top: 2%;
+   
+  }
+  .form-title {
+    margin-top: 65%;
+    font-size: 30px;
+    font-weight: 800px;
+    color: black;
+    font-family:sans-serif;
+    background: none;
+   
+   }
+   
+  
+  /* Container for the content */
+  #global-background {
+    background: #414141;
+    padding: 10px 0 0px; /* Top, Right, Bottom padding; Left is 0 */
+    min-height: 100vh; /* Cover the entire viewport height */
+    box-sizing: content-box; /* Adjust box sizing for padding */
+    overflow-y: auto;
+  }
+
+   .employee-form{
+    background: none;
+   }
+
+  #insideBox{
+    background-color: white; 
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: -4%;
+    margin-left: 1%;
+    width: 97%;
+    height: fit-content;
+    margin-top: -2%;
+    
+}
+#submitemp{
+  float: right;
+  margin-top: 3%;
+  border: 1.5px solid black;
+
+}
+
+#editemp
+{
+  float: right;
+  margin-right: 5%;
+  margin-top: 3%;
+  color: black;
+  border: 1.5px solid black;
+}
+#employeeId{
+  border: 1px solid rgba(0, 0, 0, 0.445);
+}
+
+#Date{
+  border: 1px solid rgba(0, 0, 0, 0.445);
+}
+
+#dropdown{
+  border: 1px solid rgba(0, 0, 0, 0.445);
+}
+
+#emplabel{
+  background: rgba(255, 213, 0, 0.819);
+  width: 50%;
+  border-radius: 1px ;
+  font-weight: 800px;
+  color: black;
+}
+
+.form-check-input[type="radio"]{
+  border: 1px solid #000; /* Adjust the border thickness and color */
+}
+
+.modeButton{
+  margin-left: 50%;
+}
+
+#fileUpload{
+  border: 1px solid rgba(0, 0, 0, 0.445);
+}
+
+#purposeButton{
+  margin-top: 35%;
+}
+
+.move-right {
+  margin-left: 10px; /* Adjust the value as needed */
+}
+
+/* .custom-table{
+  width: 150% !important;
+}
+
+.custom-table td {
+  margin-top: -5%;
+  font-size: 14px; 
+} */
+  
+.advanceButton{
+  margin-left: 50%;
+  /* margin-top: -5%; */
+}
+
+.custom-icon{
+  margin-left: 3px;
+}
+
+.custom-button{
+  margin-left: 5px;
+}
