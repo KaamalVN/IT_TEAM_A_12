@@ -1,0 +1,52 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+#bulkContainer {
+    background: #414141;
+    height: 100vh;
+  }
+ #roleContainers{
+    border-color: #FFD300;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    width: 99vw;
+    height: 65vh;
+    margin-top: -5%;
+  } 
+  #text{
+    color: white;
+  }
+  #roletext {
+    color: #FFD300;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px; /* Add space below the text */
+  }
+  #admincombtn{
+    margin-right: 10px;  
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white; 
+    width: 20vw;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #adminempbtn{
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white; 
+    width: 20vw;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #admincombtn:hover {
+    background-color: #FFD300;
+    color: #414141;
+    border: 2px solid #FFD300;
+  }
+  #adminempbtn:hover {
+    background-color: #FFD300;
+    color: #414141;
+    border: 2px solid #FFD300;
+  }

@@ -1,0 +1,188 @@
+/* EmployeeForm.css */
+/* *{
+  background: #414141;
+} */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.circleController{
+  margin-top: -1.5%;
+  margin-left: 20%;
+}
+
+.circle-container {
+  left: 2%;
+  margin: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the circles horizontally */
+}
+
+.circle-heading-container {
+  display: flex;
+  flex-direction: column; /* Stack circles and headings vertically on smaller screens */
+  align-items: center;
+  text-align: center;
+}
+
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: none; /* Default color for circles */
+  position: relative;
+  margin-right: 60px; /* Adjust the gap between circles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+  font-weight: bold;
+  font-size: 16px; /* Adjust font size as needed */
+  border: 2px solid #ccc;
+}
+
+.circle.yellow {
+  border: 2px solid rgba(255, 211, 0, 1);
+  background-color: rgba(255, 211, 0, 1); /* Change color of the first circle */
+  color: black;
+}
+
+.line {
+  width: 150%; /* Adjust the width of the line as needed */
+  height: 3px;
+  background-color: #ccc; /* Default line color */
+  position: absolute;
+  top: calc(50% - 1px); /* Position the line vertically in the middle of the circle */
+  right: -62px; /* Adjust the position of the line */
+}
+
+.line.yellow {
+  background-color: rgba(255, 211, 0, 1); /* Change color of the line for the first circle */
+}
+
+.circle:last-child::after {
+  content: none; /* Hide line on the last circle */
+}
+
+.heading {
+  color: white;
+  margin-top: 10px; /* Adjust spacing between circle and heading */
+  margin-left: -50px; /* Adjust the negative margin as needed */
+  font-size: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .circle-heading-container {
+    align-items: center; /* Center items horizontally on smaller screens */
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    margin-right: 0; /* Remove margin for circles on smaller screens */
+    margin-bottom: 20px; /* Add margin between circles on smaller screens */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .line {
+    width: 60px;
+    right: -60px;
+  }
+  
+  .heading {
+    margin-top: 5px; /* Adjust spacing between circle and heading on smaller screens */
+    margin-left: 0; /* Remove the negative margin on smaller screens */
+  }
+}
+
+  #addempform{
+      border-radius: 0px 50px;
+      padding: 20px;
+      background: linear-gradient(to right, rgba(255, 211, 0, 1) 25%, #dddddd 25%);
+      width: 72vw;
+      height: fit-content;
+      margin-left: 20%;
+      /* margin-top: 10%; */
+     
+    }
+    .form-title {
+      margin-top: 65%;
+      font-size: 30px;
+      font-weight: 800px;
+      color: black;
+      font-family:sans-serif;
+      background: none;
+     
+     }
+     
+    
+    /* Container for the content */
+    #global-background {
+      background: #414141;
+      padding: 10px 0 0px; /* Top, Right, Bottom padding; Left is 0 */
+      min-height: 100vh; /* Cover the entire viewport height */
+      box-sizing: content-box; /* Adjust box sizing for padding */
+      overflow-y: auto;
+    }
+  
+     .employee-form{
+      background: none;
+     }
+  
+    #insideBox{
+      background-color: white; 
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: -4%;
+      margin-left: 1%;
+      width: 97%;
+      height: fit-content;
+      margin-top: -2%;
+      
+  }
+  #addsubmitemp{
+    float: right;
+    margin-top: 5%;
+    border: 1.5px solid black;
+  
+  }
+  
+
+  #addemployee{
+    border: 1px solid rgba(0, 0, 0, 0.445);
+  }
+  
+  .form-label{
+    background-color: rgba(255, 213, 0, 0.819);
+    width: fit-content;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  
+  #dropdown{
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    width: 100%;
+    height: 6vh;
+    border-radius: 5px;
+  }
+  
+  #addemplabel{
+    background: rgba(255, 213, 0, 0.819);
+    width: 50%;
+    border-radius: 1px ;
+    font-weight: 800px;
+    color: black;
+  }
+  #addempnum{
+    /* background: rgba(255, 213, 0, 0.819); */
+    /* width: 70%; */
+    border-radius: 1px ;
+    font-weight: 800px;
+    color: black;
+  }
+
+
+  
+
+  

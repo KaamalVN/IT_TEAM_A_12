@@ -1,0 +1,262 @@
+* {
+  --transition: all 0.2s ease;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  /* background: #414141; */
+
+}
+
+.global-background {
+  background: grey;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 67px;
+    /* width: 15%; */
+    height: 100%;
+    background: #414141;
+    padding: 8px 16px;
+    transition: var(--transition);
+  }
+  .sidebar.expand {
+    width: 250px;
+    transition: var(--transition);
+  }
+  
+  .nav-header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 10%;
+    padding-left: 10%;
+  }
+  
+  .logo {
+    color: var(--color-black);
+    font-size: 23px;
+    padding-top: 2%;
+    font-weight: 600;
+    opacity: 0;
+    display: none;
+    transition: var(--transition);
+    margin-left: 30px;
+  }
+  
+  .sidebar.expand .logo {
+    opacity: 1;
+    transition: var(--transition);
+  }
+  
+  .nav-header .btn-menu {
+    display: inline;
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 23px;
+    cursor: pointer;
+    margin-right: 3%;
+  }
+  
+  .sidebar.expand .nav-header .btn-menu {
+    margin-right: 0;
+  }
+  
+  .nav-links {
+    display: inline;
+    margin-top: 10px;
+    height: 100%;
+  }
+  
+  .nav-links li {
+    position: relative;
+    margin: 8px 0;
+    list-style: none;
+  }
+  
+  .nav-links i {
+    background: #414141;
+    color: white;
+    height: 50px;
+    min-width: 50px;
+    font-size: 23px;
+    text-align: center;
+    line-height: 50px;
+  }
+  
+  /* .nav-links li:last-child {
+    position: absolute;
+    bottom: 10%;
+  } */
+  
+  .nav-links li a {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    background: #414141;
+  }
+  
+  .nav-links li:hover a {
+    background: #414141;
+  }
+  
+  .nav-links li:hover i {
+    margin-bottom: 5%;
+    color: #ffd300;
+  }
+  
+  .sidebar.expand .nav-links li:hover .title {
+    margin-bottom: 5%;
+    color: #ffd300;
+    border-radius: 5px;
+    border-right: 3px solid #ffd300;
+  }
+  
+  .nav-links li a .title {
+    color: var(--color-black);
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    display: none;
+    transition: var(--transition);
+  }
+  
+  .sidebar.expand .nav-links li:last-child {
+    visibility: hidden;
+  
+    position: absolute;
+    bottom: 10%;
+  }
+  
+  .sidebar.expand .nav-links li a .title {
+    width: 100%;
+    display: block;
+    transition: var(--transition);
+    color: white;
+  }
+  
+  .nav-links li .tooltip {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background: #414141;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 14px;
+    color: white;
+    font-size: 15px;
+    white-space: nowrap;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0s;
+  }
+  
+  .sidebar li:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transition: var(--transition);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .sidebar.expand .tooltip {
+    display: none;
+  }
+  
+  .sidebar .log_out {
+    visibility: hidden;
+  }
+  
+  .sidebar.expand~.header {
+    left: 250px;
+    width: calc(100% - 250px);
+    transition: var(--transition);
+  }
+  
+  .logo2 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sidebar .log_out {
+    visibility: hidden;
+  }
+
+  .sidebar.expand .log_out {
+    background-color: #ffd300;
+    visibility: visible;
+    /* bottom: 2%; */
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+  
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    margin-left: 2%;
+    border: none;
+    border-radius: 7px;
+  }
+  
+  .sidebar.expand .log_out:hover {
+    background-color: yellow;
+  }
+
+  .ellipse {
+    left: 4%;
+    top: 0px;
+    position: absolute;
+    width: 250px;
+    height: 130px;
+  }
+
+  .ellipse-moved {
+    transform: translateX(78%);
+  }
+
+  .profile {
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(138, 138, 138, 1);
+  }
+  
+  .profile-text {
+    top: 5%;
+    position: absolute;
+    right: 5%;
+    color: white;
+    font-size: 10px;
+  }
+  
+  .profile-id {
+    top: 2%;
+    position: absolute;
+    right: 5%;
+    color: white;
+    font-size: 10px;
+  }
+
+  #ellipse-heading{
+    font-size: 25px;
+    font-weight: 900;
+    position: absolute;
+    top: 8px;
+    left: 8%;
+  }
