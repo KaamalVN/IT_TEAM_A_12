@@ -1,0 +1,199 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+#previewform {
+    background: rgba(194, 194, 194, 0.897);
+    border-radius: 20px 20px 20px 20px;
+    width: 95%;
+    height: fit-content;
+    margin-top: 15%;
+    margin-left: 6%;
+    padding-bottom: 70px;
+  }
+  
+
+#previewform h5 {
+    background:#FFD300;
+    width: 25%;
+    height: 60px; 
+    border-radius: 10px 10px 100px 100px;
+    margin-top: -20px;
+    text-align: center; 
+    right: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 38%;
+  }
+  /* #presubbut {
+    margin-top: 20px;
+    color: rgb(5, 5, 5);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #FFD300;
+    float: right;
+    margin-right: -150%;
+  } */
+  /* .btn-secondary{
+    float: right;
+    margin-right: 15%;
+    margin-top: -3.9%;
+    height: 5.9vh;
+  }
+  .btn-secondary #preeditbut {
+      color: black;
+    } */
+
+  #basicdetailspre{
+  position: relative;
+  align-items: center;
+  width: 32%;
+  height: 65px;
+  text-align: center;
+  color: #FFD300;
+  font-size: 30px;
+  font-weight: 800;
+  background: #414141;
+  margin-top: 5%;
+  border-radius: 0px 100px 100px 0px;
+  margin-left: -1.4%;
+  }
+  #basicprevform {
+    background-color: white; /* Set the background color to white */
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+
+#commentslabelpreview{
+  width: 21%;
+  background-color: #FFD300;
+}
+
+  #triptypelabelpreview {
+  float: left;
+  background-color: #FFD300;
+  width: 60%;
+}
+#fromcitylabelpreview{
+    float: left;
+    background-color: #FFD300;
+    width: 60%;
+  }
+#countrylabelpreview{
+    float: left;
+  background-color: #FFD300;
+  width: 40%;
+}
+#tocitylabelpreview{
+    float: left;
+  background-color: #FFD300;
+  width: 40%;
+}
+#DDatelabelpreview{
+    float: left;
+    background-color: #FFD300;
+    width: 40%;
+}
+#DTimelabelpreview{
+    float: left;
+    background-color: #FFD300;
+    width: 60%;
+}
+#RDatelabelpreview{
+    float: left;
+    background-color: #FFD300;
+    width: 40%;  
+}
+#RTimelabelpreview{
+    float: left;
+    background-color: #FFD300;
+    width: 40%; 
+}
+  #modeoftransport {
+    margin-bottom: 1%;
+    text-align: center;
+    float: right;
+    margin-right: -1.5%;
+    border-radius: 100px 0px 0px 100px;
+    position: relative;
+    align-items: center;
+    width: 40%;
+    justify-content: center;
+    height: 65px;
+    color: #FFD300;
+    font-size: 30px;
+    font-weight: 800;
+    background: #414141;
+    margin-top: 3%;
+  }
+  #modeoftranportform {
+    background-color: white; /* Set the background color to white */
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 12%;
+  }
+  #purpose{
+    position: relative;
+    align-items: center;
+    width: 32%;
+    height: 65px;
+    text-align: center;
+    color: #FFD300;
+    font-size: 30px;
+    font-weight: 800;
+    background: #414141;
+    margin-top: 4%;
+    border-radius: 0px 100px 100px 0px;
+    margin-left: -1.4%;
+  }
+  #purposeform{
+    background-color: white; /* Set the background color to white */
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+
+  #advance {
+    margin-bottom: 1%;
+    text-align: center;
+    float: right;
+    margin-right: -1.5%;
+    border-radius: 100px 0px 0px 100px;
+    position: relative;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    height: 65px;
+    color: #FFD300;
+    font-size: 30px;
+    font-weight: 800;
+    background: #414141;
+    margin-top: 3%;
+  }
+  #advanceForm {
+    background-color: white; /* Set the background color to white */
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 12%;
+  }
+
+  #submit1{
+    float: right;
+    margin-right: 2%;
+  }
+  #edit1
+  {
+    float: right;
+    margin-right: 2%;
+    margin-top: 2%;
+    color: black;
+  }
+
+  #downButtonGroup{
+    margin-top: 3%;
+  }
+
+  #moveAdvanceTable{
+    margin-top: -5%;
+  }

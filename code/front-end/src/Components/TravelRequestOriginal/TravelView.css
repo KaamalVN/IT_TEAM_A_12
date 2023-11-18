@@ -1,0 +1,292 @@
+#viewcontainer {
+    background: rgba(194, 194, 194, 0.897);
+    border-radius: 20px 20px 20px 20px;
+    width: 72vw;
+    height: fit-content;
+    margin-top: 5%;
+    margin-left: 10%;
+   padding-bottom: 3%;
+  }
+#viewcontainer h5 {
+    background:#FFD300;
+    width: 25%;
+    height: 5%; 
+    border-radius: 20px 0px 27px 0px;
+    text-align: center; 
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: -1.2%;
+  }
+  #reviewcontainer {
+    background: rgba(194, 194, 194, 0.897);
+    border-radius: 20px 20px 20px 20px;
+    width: 72vw;
+    height: fit-content;
+    margin-top: 6%;
+    margin-left: 10%;
+    padding-bottom: 3%;
+  }
+  #reviewcontainer h5 {
+    background:#FFD300;
+    width: 25%;
+    height: 40px; 
+    border-radius: 20px 0px 27px 0px;
+    margin-top: -50px;
+    text-align: center; 
+    right: 10px;
+    font-size: 30px;
+    font-weight: 650;
+    margin-left: -1.2%;
+  }
+  #reviewcontainerp{
+    border-radius: 8px;
+    width: 70vw;
+    height: 5rem;
+  }
+  
+  #accomodationContainer{
+    background: rgba(194, 194, 194, 0.897);
+    border-radius: 20px 20px 20px 20px;
+    width: 72vw;
+    height: fit-content;
+    margin-top: 6%;
+    padding-bottom: 3%;
+    margin-left: 10%;
+  }
+
+  #accomodationContainer h5 {
+    background:#FFD300;
+    width: 35%;
+    height: 40px; 
+    border-radius: 20px 0px 27px 0px;
+    margin-top: -50px;
+    text-align: center; 
+    right: 10px;
+    font-size: 30px;
+    font-weight: 650;
+    margin-left: -1.2%;
+  }
+
+  #ticketContainer{
+    background: rgba(194, 194, 194, 0.897);
+    border-radius: 20px 20px 20px 20px;
+    width: 72vw;
+    height: fit-content;
+    padding-bottom: 3%;
+    margin-top: 6%;
+    margin-left: 10%;
+  }
+
+  #ticketContainer h5 {
+    background:#FFD300;
+    width: 35%;
+    height: 40px; 
+    border-radius: 20px 0px 27px 0px;
+    margin-top: -50px;
+    text-align: center; 
+    right: 10px;
+    font-size: 30px;
+    font-weight: 650;
+    margin-left: -1.2%;
+  }
+
+  #submit{
+    float: right;
+    margin-right: 30%;
+    margin-top: -6%;
+    margin-bottom: 4%;
+  }
+
+  #submit1{
+    float: right;
+    /* margin-left: 1%; */
+    /* margin-right: 30%; */
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+  #edit
+  {
+    float: right;
+    margin-right: 3%;
+    margin-top: -6%;
+    /* margin-bottom: 2%; */
+    color: black;
+  }
+  #approve
+  {
+    float: right;
+    margin-right: 13%;
+    margin-top: -6%;
+    /* margin-bottom: 2%; */
+    color: black;
+  }
+  
+  /* .vertical-progress {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -76.5%;
+    width: 20%;
+    height: 100vh; 
+    border: 1px solid #ccc;
+    float: right;
+    border-radius: 20px;
+  }
+  
+  .progress-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 20px;
+  }
+  
+  .progress1 {
+    background-color: #FFD300;
+  }
+   */
+  .circles {
+    width: 15%; /* Adjust circle size as needed */
+    height: 15%;
+    margin-right: 35%;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px; /* Adjust font size as needed */
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  
+  .white-box {
+    background-color: white;
+    width: 97%;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 20px 20px 20px 20px ; /* Add padding as needed */
+    /* Add any other styles you want for the white box */
+}
+
+#triptypelabelview {
+  float: left;
+  background-color: #FFD300;
+  width: 30%;
+}
+#fromcitylabelview{
+  float: left;
+  background-color: #FFD300;
+  width: 30%;
+}
+#countrylabelview{
+  float: left;
+background-color: #FFD300;
+width: 30%;
+}
+#tocitylabelview{
+  float: left;
+background-color: #FFD300;
+width: 30%;
+}
+#DDatelabelview{
+  float: left;
+  background-color: #FFD300;
+  width: 30%;
+}
+#DTimelabelview{
+  float: left;
+  background-color: #FFD300;
+  width: 30%;
+}
+#RDatelabelview{
+  float: left;
+  background-color: #FFD300;
+  width: 30%;  
+}
+#RTimelabelview{
+  float: left;
+  background-color: #FFD300;
+  width: 30%; 
+}
+#modelabelview {
+  float: left;
+  background-color: #FFD300;
+  width: 30%;
+}
+#passportlabelview{
+  float: left;
+  background-color: #FFD300;
+  width: 30%;
+}
+#expirylabelview{
+  float: left;
+  background-color: #FFD300;
+  width: 30%;
+}
+#namelabelview{
+  float: left;
+background-color: #FFD300;
+width: 30%;
+}
+#idprooflabelview {
+  float: left;
+  background-color: #FFD300;
+  width: 30%;
+}
+#purposelabelview{
+  float: left;
+  background-color: #FFD300;
+  width: 30%;
+}
+#billinglabelview{
+  float: left;
+background-color: #FFD300;
+width: 30%;
+}
+#advancelabelview{
+  float: left;
+  background-color: #FFD300;
+  width: 30%;
+}
+#commentlabelview{
+  float: left;
+  background-color: #FFD300;
+  width: 10%;
+}
+#employeeIdview{
+  border: 1px solid rgba(0, 0, 0, 0.445);
+}
+
+.circless {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: none; /* Default color for circles */
+  position: relative;
+  margin-right: 80px; /* Adjust the gap between circles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+  font-weight: bold;
+  font-size: 16px; /* Adjust font size as needed */
+  border: 2px solid #ccc;
+}
+
+.liness {
+  width: 160%; /* Adjust the width of the line as needed */
+  height: 3px;
+  background-color: #ccc; /* Default line color */
+  position: absolute;
+  top: calc(50% - 1px); /* Position the line vertically in the middle of the circle */
+  right: -82px; /* Adjust the position of the line */
+}
+
+.headingss {
+  color: white;
+  margin-top: 10px; /* Adjust spacing between circle and heading */
+  margin-left: -75px; /* Adjust the negative margin as needed */
+  font-size: 20px;
+}
